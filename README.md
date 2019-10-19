@@ -25,7 +25,7 @@ Para adicionar o pacote (Classe) em seu projeto, você pode baixar o pacote atra
 ### Via composer
 Para adicionar via composer basta acessar a raiz do seu projeto via linha de comando e executar o seguinte comando.
 ```shell
-composer require eightyfourcodeart/str-utf8
+composer require eightyfourcodeart/str-utf8 dev-master
 ```
 Depois de instalar o pacote **StrUTF8\Str** em seu projeto, você pode usar da seguinte forma.
 ```php
