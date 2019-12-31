@@ -32,7 +32,7 @@ Depois de instalar o pacote **StrUTF8\Str** em seu projeto, você pode usar da s
 <?php
 namespace App\Modue\MeuModulo;
 
-use EeightyFourCodeArt\StrUTF8\Str;
+use CodigoseCafe\StrUTF8\Str;
 
 class MinhaClasse
 {

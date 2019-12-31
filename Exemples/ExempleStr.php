@@ -1,7 +1,7 @@
 <?php
 include_once(__DIR__.'/../vendor/autoload.php');
 
-use EeightyFourCodeArt\StrUTF8\Str;
+use CodigoseCafe\StrUTF8\Str;
 class ExempleStr
 {
     public function print($string = null)
