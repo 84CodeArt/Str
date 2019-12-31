@@ -19,20 +19,20 @@ Esse código fará o trabalho com maestria, convertendo sem dificuldade para UTF
 ---
 ## Instalação
 
-Para adicionar o pacote (Classe) em seu projeto, você pode baixar o pacote através desse link: https://github.com/eightyfourcodeart/str-utf8/archive/master.zip e adicionar em seu projeto através do include ou require, abordarei esse metódo na seção, **Sem composer**.
+Para adicionar o pacote (Classe) em seu projeto, você pode baixar o pacote através desse link: https://github.com/codigosecafe/str-utf8/archive/master.zip e adicionar em seu projeto através do include ou require, abordarei esse metódo na seção, **Sem composer**.
 
 ---
 ### Via composer
 Para adicionar via composer basta acessar a raiz do seu projeto via linha de comando e executar o seguinte comando.
 ```shell
-composer require eightyfourcodeart/str-utf8 dev-master
+composer require codigosecafe/str-utf8 dev-master
 ```
 Depois de instalar o pacote **StrUTF8\Str** em seu projeto, você pode usar da seguinte forma.
 ```php
 <?php
 namespace App\Modue\MeuModulo;
 
-use EeightyFourCodeArt\StrUTF8\Str;
+use CodigoseCafe\StrUTF8\Str;
 
 class MinhaClasse
 {

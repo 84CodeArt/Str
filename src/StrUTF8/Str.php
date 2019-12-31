@@ -1,5 +1,5 @@
 <?php
-namespace EeightyFourCodeArt\StrUTF8;
+namespace CodigoseCafe\StrUTF8;
 
 class Str {
   const ICONV_TRANSLIT = "TRANSLIT";
