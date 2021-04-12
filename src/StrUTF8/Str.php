@@ -335,25 +335,32 @@ class Str {
   }
 
   
-  public static function stripAccents($str, $option = self::WITHOUT_ICONV)
+  public static function stripAccents($str, $outherCaracter=[], $option = self::WITHOUT_ICONV)
   {
      $str = self::fixUTF8($str, $option);
-     return preg_replace([
-         "/(á|à|ã|â|ä)/",
-         "/(Á|À|Ã|Â|Ä)/",
-         "/(é|è|ê|ë)/",
-         "/(É|È|Ê|Ë)/",
-         "/(í|ì|î|ï)/",
-         "/(Í|Ì|Î|Ï)/",
-         "/(ó|ò|õ|ô|ö)/",
-         "/(Ó|Ò|Õ|Ô|Ö)/",
-         "/(ú|ù|û|ü)/",
-         "/(Ú|Ù|Û|Ü)/",
-         "/(Ç)/",
-         "/(ç)/",
-         "/(ñ)/",
-         "/(Ñ)/"],
-         explode(" ","a A e E i I o O u U C c n N"), $str );
+
+     $stripString = preg_replace([
+      "/(á|à|ã|â|ä)/",
+      "/(Á|À|Ã|Â|Ä)/",
+      "/(é|è|ê|ë)/",
+      "/(É|È|Ê|Ë)/",
+      "/(í|ì|î|ï)/",
+      "/(Í|Ì|Î|Ï)/",
+      "/(ó|ò|õ|ô|ö)/",
+      "/(Ó|Ò|Õ|Ô|Ö)/",
+      "/(ú|ù|û|ü)/",
+      "/(Ú|Ù|Û|Ü)/",
+      "/(Ç)/",
+      "/(ç)/",
+      "/(ñ)/",
+      "/(Ñ)/"],
+      explode(" ","a A e E i I o O u U C c n N"), $str );
+
+      if(!empty($outherCaracter)){
+        $stripString = str_replace($outherCaracter, '', $stripString);
+      }
+    
+     return $stripString;
   }
 
     public static function summary($string, $limite_caracter, $dots = self::DOTS_SUMMARY, $option = self::WITHOUT_ICONV) { 
