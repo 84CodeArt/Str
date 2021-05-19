@@ -259,6 +259,11 @@ class Str {
   }
   
   public static function fixUTF8($text, $option = self::WITHOUT_ICONV){
+
+    if(\is_bool($text)){
+      return $text;
+    }
+
     if(is_array($text)) {
       foreach($text as $k => $v) {
         $text[$k] = self::fixUTF8($v, $option);
