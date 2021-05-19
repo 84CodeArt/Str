@@ -337,6 +337,10 @@ class Str {
   
   public static function stripAccents($str, $outherCaracter=[], $option = self::WITHOUT_ICONV)
   {
+    if(\is_bool($str)){
+      return $str;
+    }
+
      $str = self::fixUTF8($str, $option);
 
      $stripString = preg_replace([
