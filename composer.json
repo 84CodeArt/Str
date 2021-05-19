@@ -3,7 +3,6 @@
     "description": "Classe responsável por converter Windows-1252 e ISO-8859-1 para UTF-8. Alem de auxiliar com alguns metodos",
     "type": "libary",
     "license": "MIT",
-    "version": "2.1.1.0",
     "authors": [
         {
             "name": "Claudio Alexssandro Lino",
