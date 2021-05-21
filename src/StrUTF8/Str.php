@@ -260,7 +260,7 @@ class Str {
   
   public static function fixUTF8($text, $option = self::WITHOUT_ICONV){
 
-    if(\is_bool($text)){
+    if(\is_bool($text) || \is_numeric($text) || \is_null($text)){
       return $text;
     }
 
@@ -342,7 +342,7 @@ class Str {
   
   public static function stripAccents($str, $outherCaracter=[], $option = self::WITHOUT_ICONV)
   {
-    if(\is_bool($str)){
+    if(\is_bool($str) || \is_numeric($str) || \is_null($str)){
       return $str;
     }
 
